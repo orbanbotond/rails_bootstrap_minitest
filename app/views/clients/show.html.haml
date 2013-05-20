@@ -1,0 +1,32 @@
+%p#notice= notice
+%p
+  %b Name:
+  = @client.name
+%p
+  %b Ac Number:
+  = @client.ac_number
+%p
+  %b Authentication Key:
+  = @client.authentication_key
+%p
+  %b Purchasing System:
+  = @client.purchasing_system.name rescue ''
+%p
+  %b System Version:
+  = @client.system_version.name rescue ''
+%p
+  %b Category Schema:
+  = @client.category_schema
+%p
+  %b Nr of agreements:
+  = link_to @client.agreements.count, agreements_path
+%p
+  %b Account Status:
+  = @client.account_status
+%p
+  %b Comment:
+  = @client.comment
+= link_to 'Edit', edit_client_path(@client)
+- unless current_user.buyer?
+  |
+  = link_to 'Back', clients_path

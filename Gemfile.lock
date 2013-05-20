@@ -1,0 +1,360 @@
+GIT
+  remote: git://github.com/guard/guard-minitest.git
+  revision: 02943b78d73369b2a1717feff1842b70fe9f8d68
+  specs:
+    guard-minitest (1.0.0.beta1)
+      guard (~> 1.1)
+
+GIT
+  remote: git://github.com/wr0ngway/graylog2_exceptions.git
+  revision: 797924acd1aa89852605230812d8cfd27da90969
+  specs:
+    graylog2_exceptions (1.3.0)
+      gelf (~> 1.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    actionmailer (3.2.11)
+      actionpack (= 3.2.11)
+      mail (~> 2.4.4)
+    actionpack (3.2.11)
+      activemodel (= 3.2.11)
+      activesupport (= 3.2.11)
+      builder (~> 3.0.0)
+      erubis (~> 2.7.0)
+      journey (~> 1.0.4)
+      rack (~> 1.4.0)
+      rack-cache (~> 1.2)
+      rack-test (~> 0.6.1)
+      sprockets (~> 2.2.1)
+    activemodel (3.2.11)
+      activesupport (= 3.2.11)
+      builder (~> 3.0.0)
+    activerecord (3.2.11)
+      activemodel (= 3.2.11)
+      activesupport (= 3.2.11)
+      arel (~> 3.0.2)
+      tzinfo (~> 0.3.29)
+    activeresource (3.2.11)
+      activemodel (= 3.2.11)
+      activesupport (= 3.2.11)
+    activesupport (3.2.11)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    acts_as_paranoid (0.4.1)
+      activerecord (~> 3.2)
+    annotate (2.5.0)
+      rake
+    arel (3.0.2)
+    bcrypt-ruby (3.0.1)
+    best_in_place (2.1.0)
+      jquery-rails
+      rails (~> 3.1)
+    builder (3.0.4)
+    bullet (4.5.0)
+      uniform_notifier
+    cancan (1.6.9)
+    capistrano (2.14.2)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    celluloid (0.12.4)
+      facter (>= 1.6.12)
+      timers (>= 1.0.0)
+    clamp (0.5.0)
+    coderay (1.0.8)
+    coffee-rails (3.2.2)
+      coffee-script (>= 2.2.0)
+      railties (~> 3.2.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.4.0)
+    connection_pool (1.0.0)
+    database_cleaner (0.9.1)
+    devise (2.2.3)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (~> 3.1)
+      warden (~> 1.2.1)
+    diffy (2.1.3)
+    em-websocket (0.4.0)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.5.3)
+    encrypted_id (1.1.0)
+      activerecord (>= 3.0.0)
+    erubis (2.7.0)
+    eventmachine (1.0.0)
+    excon (0.16.10)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    facter (1.6.18)
+    faker (1.1.2)
+      i18n (~> 0.5)
+    fog (1.9.0)
+      builder
+      excon (~> 0.14)
+      formatador (~> 0.2.0)
+      mime-types
+      multi_json (~> 1.0)
+      net-scp (~> 1.0.4)
+      net-ssh (>= 2.1.3)
+      nokogiri (~> 1.5.0)
+      ruby-hmac
+    formatador (0.2.4)
+    gelf (1.4.0)
+      json
+    graylog2-resque (0.5.1)
+      gelf
+      resque
+    guard (1.6.2)
+      listen (>= 0.6.0)
+      lumberjack (>= 1.0.2)
+      pry (>= 0.9.10)
+      terminal-table (>= 1.4.3)
+      thor (>= 0.14.6)
+    guard-annotate (1.0.0)
+      annotate (>= 2.4.0)
+      guard (>= 0.2.2)
+    guard-bundler (1.0.0)
+      bundler (~> 1.0)
+      guard (~> 1.1)
+    guard-livereload (1.1.3)
+      em-websocket (>= 0.2.0)
+      guard (>= 1.5.0)
+      multi_json (~> 1.0)
+    haml (3.1.7)
+    hashr (0.0.22)
+    highline (1.6.15)
+    hike (1.2.1)
+    http_parser.rb (0.5.3)
+    i18n (0.6.1)
+    journey (1.0.4)
+    jquery-fileupload-rails (0.4.1)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+    jquery-rails (2.2.0)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
+    json (1.7.7)
+    libv8 (3.11.8.13)
+    listen (0.7.2)
+    lumberjack (1.0.2)
+    mail (2.4.4)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    method_source (0.8.1)
+    mime-types (1.20.1)
+    miniskirt (1.2.1)
+      activesupport
+    minitest (4.6.0)
+    minitest-matchers (1.2.0)
+      minitest (>= 2.5.0)
+    minitest-rails (0.5.1)
+      minitest (~> 4.0)
+      rails (>= 3.0)
+    minitest-rails-shoulda (0.4.1)
+      minitest-matchers (~> 1.2.0)
+      minitest-rails (~> 0.5.0)
+      shoulda-matchers (~> 1.4.1)
+    minitest-should_syntax (1.0.2)
+      minitest
+    multi_json (1.6.1)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.1.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.5)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
+    nokogiri (1.5.6)
+    open4 (1.3.0)
+    orm_adapter (0.4.0)
+    pg (0.14.1)
+    polyamorous (0.5.0)
+      activerecord (~> 3.0)
+    polyglot (0.3.3)
+    pry (0.9.11.4)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    pry-nav (0.2.3)
+      pry (~> 0.9.10)
+    rack (1.4.4)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-livereload (0.3.11)
+      rack
+    rack-protection (1.3.2)
+      rack
+    rack-ssl (1.3.3)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    railroady (1.1.0)
+    rails (3.2.11)
+      actionmailer (= 3.2.11)
+      actionpack (= 3.2.11)
+      activerecord (= 3.2.11)
+      activeresource (= 3.2.11)
+      activesupport (= 3.2.11)
+      bundler (~> 1.0)
+      railties (= 3.2.11)
+    railties (3.2.11)
+      actionpack (= 3.2.11)
+      activesupport (= 3.2.11)
+      rack-ssl (~> 1.3.2)
+      rake (>= 0.8.7)
+      rdoc (~> 3.4)
+      thor (>= 0.14.6, < 2.0)
+    rake (10.0.3)
+    rb-fsevent (0.9.3)
+    rb-readline (0.4.2)
+    rdoc (3.12.1)
+      json (~> 1.4)
+    redis (3.0.2)
+    redis-namespace (1.2.1)
+      redis (~> 3.0.0)
+    ref (1.0.2)
+    resque (1.23.0)
+      multi_json (~> 1.0)
+      redis-namespace (~> 1.0)
+      sinatra (>= 0.9.2)
+      vegas (~> 0.1.2)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rubber (2.2.1)
+      capistrano (~> 2.12)
+      clamp
+      fog (~> 1.6)
+      json
+      net-ssh (~> 2.6)
+      open4
+      thor
+    ruby-hmac (0.4.0)
+    sass (3.2.5)
+    sass-rails (3.2.6)
+      railties (~> 3.2.0)
+      sass (>= 3.1.10)
+      tilt (~> 1.3)
+    shoulda-matchers (1.4.1)
+      activesupport (>= 3.0.0)
+    sidekiq (2.8.0)
+      celluloid (~> 0.12.0)
+      connection_pool (~> 1.0)
+      multi_json (~> 1)
+      redis (~> 3)
+      redis-namespace
+    simple-navigation (3.10.0)
+      activesupport (>= 2.3.2)
+    simple_form (2.0.4)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
+    sinatra (1.3.4)
+      rack (~> 1.4)
+      rack-protection (~> 1.3)
+      tilt (~> 1.3, >= 1.3.3)
+    slim (1.3.6)
+      temple (~> 0.5.5)
+      tilt (~> 1.3.3)
+    slop (3.4.3)
+    sprockets (2.2.2)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.7)
+    squeel (1.0.16)
+      activerecord (~> 3.0)
+      activesupport (~> 3.0)
+      polyamorous (~> 0.5.0)
+    state_machine (1.2.0)
+    temple (0.5.5)
+    terminal-table (1.4.5)
+    therubyracer (0.11.3)
+      libv8 (~> 3.11.8.12)
+      ref
+    thor (0.17.0)
+    tilt (1.3.3)
+    timers (1.1.0)
+    tire (0.5.4)
+      activemodel (>= 3.0)
+      hashr (~> 0.0.19)
+      multi_json (~> 1.3)
+      rake
+      rest-client (~> 1.6)
+    treetop (1.4.12)
+      polyglot
+      polyglot (>= 0.3.1)
+    tzinfo (0.3.35)
+    uglifier (1.3.0)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
+    uniform_notifier (1.2.0)
+    vegas (0.1.11)
+      rack (>= 1.0.0)
+    warden (1.2.1)
+      rack (>= 1.0)
+    will_paginate (3.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  acts_as_paranoid (~> 0.4.0)
+  annotate (>= 2.5.0)
+  best_in_place
+  bullet
+  cancan
+  coffee-rails (~> 3.2.1)
+  database_cleaner
+  devise
+  diffy
+  encrypted_id
+  faker
+  gelf
+  graylog2-resque
+  graylog2_exceptions!
+  guard
+  guard-annotate
+  guard-bundler
+  guard-livereload
+  guard-minitest!
+  haml
+  jquery-fileupload-rails
+  jquery-rails
+  json (>= 1.7.7)
+  miniskirt
+  minitest
+  minitest-rails-shoulda
+  minitest-should_syntax
+  nokogiri
+  open4
+  pg
+  pry
+  pry-nav
+  rack-livereload
+  railroady
+  rails (= 3.2.11)
+  rb-fsevent
+  rb-readline
+  rubber
+  sass
+  sass-rails (~> 3.2.3)
+  shoulda-matchers (= 1.4.1)
+  sidekiq
+  simple-navigation
+  simple_form
+  sinatra
+  slim
+  sqlite3
+  squeel
+  state_machine
+  therubyracer
+  tire
+  uglifier (>= 1.0.3)
+  will_paginate

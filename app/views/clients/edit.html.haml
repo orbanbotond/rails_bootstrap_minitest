@@ -1,0 +1,8 @@
+%h1 Editing buyer
+
+= render 'form'
+
+= link_to 'Show', @client
+- unless current_user.buyer?
+  |
+  = link_to 'Back', clients_path

@@ -1,0 +1,32 @@
+%h1= title
+%table.admin_table
+  %thead
+    %th Name
+    %th AC number
+    %th Authentication Key
+    %th Purchasing System
+    %th System Version
+    %th Category Schema
+    %th Nr of agreements
+    %th Account Status
+    %th
+    %th
+    %th
+  %tbody
+    - source.each do |client|
+      %tr{:class => cycle("odd", "even")}
+        %td= client.name
+        %td= client.ac_number
+        %td= client.authentication_key
+        %td= client.purchasing_system.name rescue ''
+        %td= client.system_version.name rescue ''
+        %td= client.category_schema
+        %td= client.agreements.count
+        %td= client.account_status
+        - if client.deleted?
+          %td
+          %td= link_to 'Resurect', '#'
+          %td
+        - else
+          = render :partial => 'shared/list_actions', :locals => {object: client}
+%br/

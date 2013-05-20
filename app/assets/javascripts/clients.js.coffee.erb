@@ -1,0 +1,44 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+
+jQuery ->
+  parent_selector = '#client_purchasing_system_id'
+  child_selector = '#client_system_version_id'
+  new_form_selector = '#new_client'
+
+  system_versions = $(child_selector).html()
+
+  enableSubmit = ->
+    $("#{new_form_selector} input[type='submit']").attr('disabled', false);
+
+  disableSubmit = ->
+    $("#{new_form_selector} input[type='submit']").attr('disabled', true);
+
+  insertMessageOption = (msg)->
+    $(parent_selector).prepend("<option>#{msg}</option>")
+    $(parent_selector).val msg
+
+  new_client_form = ->
+    $("#{new_form_selector}").size() > 0
+
+  filterOptions = ->
+    purchasing_system = $("#{parent_selector} :selected").text()
+    options = $(system_versions).filter("optgroup[label='#{purchasing_system}']").html()
+    if options
+      enableSubmit()
+      $(child_selector).html(options)
+      $(child_selector).parent().show()
+    else
+      disableSubmit()
+      $(child_selector).empty()
+      $(child_selector).parent().hide()
+
+  $("#{parent_selector}").change ->
+    filterOptions()
+
+  if new_client_form()
+    insertMessageOption('Please Select')
+    disableSubmit()
+
+  filterOptions()

@@ -1,0 +1,7 @@
+<%= render :partial => "list", :locals => { title: 'Listing buyers', source: @clients } %>
+
+<%= link_to 'New Buyer', new_client_path %>
+
+<% if current_user.admin? && @deleted_clients.count > 0%>
+    <%= render :partial => "list", :locals => { title: 'Archived buyers', source: @deleted_clients } %>
+<% end %>

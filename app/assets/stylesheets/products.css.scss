@@ -1,0 +1,18 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.upload {
+  width: 150px;
+  height: 10px;
+}
+
+.upload .progress{
+  background-color: red;
+  height: 10px;
+}
+
+.upload .progress .bar{
+  background-color: green;
+  height: 10px;
+}

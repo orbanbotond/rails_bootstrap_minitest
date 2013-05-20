@@ -1,0 +1,13 @@
+= simple_form_for(@client) do |f|
+  = f.input :name
+  - unless @client.new_record?
+    = f.input :ac_number, disabled: true
+  = f.input :authentication_key
+  = f.association :purchasing_system, include_blank: false
+  .select.optional.input
+    = f.label :system_version_id
+    = f.grouped_collection_select :system_version_id, PurchasingSystem.order(:name), :system_versions, :name, :id, :name, include_blank: false
+  = f.input :category_schema, collection: ['UNSPSC'], include_blank: false
+  - unless @client.new_record?
+    = f.input :account_status, disabled: true
+  = f.button :submit
